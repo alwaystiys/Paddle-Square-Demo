@@ -10,6 +10,9 @@ public class Ball : MonoBehaviour
 
     Vector2 position, velocity;
 
+    public float Extents => extents;
+    public Vector2 Position => position;
+
     public void UpdateVisualization() =>
         transform.localPosition = new Vector3(position.x, 0f, position.y);
 
