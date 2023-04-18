@@ -3,7 +3,10 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     [SerializeField, Min(0f)]
-    float constantXSpeed = 8f, constantYSpeed = 10f;
+    float
+        constantXSpeed = 8f,
+        constantYSpeed = 10f,
+        extents = 0.5f;
 
     Vector2 position, velocity;
 
@@ -11,6 +14,18 @@ public class Ball : MonoBehaviour
         transform.localPosition = new Vector3(position.x, 0f, position.y);
 
     public void Move() => position += velocity * Time.deltaTime;
+
+    public void BounceX(float boundary)
+    {
+        position.x = 2f * boundary - position.x;
+        velocity.x = -velocity.x;
+    }
+
+    public void BounceY(float boundary)
+    {
+        position.y = 2f * boundary - position.y;
+        velocity.y = -velocity.y;
+    }
 
     public void StartNewGame()
     {
