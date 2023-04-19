@@ -269,6 +269,7 @@ MonoBehaviour:
   ball: {fileID: 7497804019664998588}
   bottomPaddle: {fileID: 1953932935}
   topPaddle: {fileID: 1150574893}
+  arenaExtents: {x: 10, y: 10}
 --- !u!4 &471360143
 Transform:
   m_ObjectHideFlags: 0
@@ -590,8 +591,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.66341525, y: -0.005518107, z: 0.0049435385, w: -0.7482148}
-  m_LocalPosition: {x: 10.06298, y: 35.863876, z: 8.987783}
+  m_LocalRotation: {x: -0.67899597, y: 0.0022654654, z: -0.0021030847, w: -0.7341355}
+  m_LocalPosition: {x: 10.195296, y: 46.29328, z: 7.426387}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1024,7 +1025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4675960055561641221, guid: b73a4114708c5224286dc3566b421704, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.94
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4675960055561641221, guid: b73a4114708c5224286dc3566b421704, type: 3}
       propertyPath: m_LocalRotation.w
